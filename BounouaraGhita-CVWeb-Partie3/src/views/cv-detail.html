@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= cv.name %> <%= cv.lastname %> - CV</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Gestionnaire de CV</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/search">Recherche</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <main class="container">
+    <section class="cv-detail">
+      <div class="cv-header">
+        <% if (cv.photo) { %>
+          <div class="profile-photo">
+            <img src="<%= cv.photo %>" alt="Photo de <%= cv.name %> <%= cv.lastname %>" class="cv-photo">
+          </div>
+        <% } %>
+        
+        <div class="header-content">
+          <h2><%= cv.name %> <%= cv.lastname %></h2>
+          <p class="title"><%= cv.title %></p>
+          <div class="actions">
+            <a href="/api/cvs/<%= cv.id %>/pdf" class="btn btn-primary">Télécharger PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-content">
+        <div class="contact-info">
+          <h3>Contact</h3>
+          <p><strong>Email:</strong> <%= cv.email %></p>
+          <p><strong>LinkedIn:</strong> <%= cv.linkedin %></p>
+          <p><strong>GitHub:</strong> <%= cv.github %></p>
+          <% if (cv.phone) { %>
+            <p><strong>Téléphone:</strong> <%= cv.phone %></p>
+          <% } %>
+          <% if (cv.address) { %>
+            <p><strong>Adresse:</strong> <%= cv.address %></p>
+          <% } %>
+        </div>
+
+        <% if (cv.summary) { %>
+        <div class="summary">
+          <h3>Résumé</h3>
+          <p><%= cv.summary %></p>
+        </div>
+        <% } %>
+
+        
+
+        <% if (cv.education && cv.education.length > 0) { %>
+        <div class="education">
+          <h3>Formation</h3>
+          <% cv.education.forEach(edu => { %>
+            <div class="edu-item">
+              <h4><%= edu.degree %></h4>
+              <p class="school-date"><%= edu.institution %> | <%= edu.startYear %> - <%= edu.endYear || 'Présent' %></p>
+              <p class="description"><%= edu.description %></p>
+            </div>
+          <% }); %>
+        </div>
+        <% } %>
+
+        <% if (cv.experiences && cv.experiences.length > 0) { %>
+        <div class="experiences">
+          <h3>Expériences professionnelles</h3>
+          <% cv.experiences.forEach(exp => { %>
+            <div class="exp-item">
+              <h4><%= exp.title %></h4>
+              <p class="company-date"><%= exp.company %> ( <%= exp.startDate %> | <%= exp.endDate || 'Présent' %> )</p>
+              <p class="description"><%= exp.description %></p>
+            </div>
+          <% }); %>
+        </div>
+        <% } %>
+
+         <% if (cv.languages && cv.languages.length > 0) { %>
+        <div class="languages">
+          <h3>Langues</h3>
+          <ul>
+            <% cv.languages.forEach(lang => { %>
+              <li><strong><%= lang.name %>:</strong> <%= lang.level %></li>
+            <% }); %>
+          </ul>
+        </div>
+        <% } %>
+
+        <% if (cv.skills && cv.skills.length > 0) { %>
+        <div class="skills-section">
+          <h3>Compétences</h3>
+          <div class="skills">
+            <% cv.skills.forEach(skill => { %>
+              <span class="badge"><%= typeof skill === 'string' ? skill : skill.name %></span>
+            <% }); %>
+          </div>
+        </div>
+        <% } %>
+
+       
+
+        <% if (cv.softSkills && cv.softSkills.length > 0) { %>
+        <div class="softSkills">
+          <h3>Soft Skills</h3>
+          <ul>
+            <% cv.softSkills.forEach(soft => { %>
+              <li><%= soft.level %></li>
+            <% }); %>
+          </ul>
+        </div>
+        <% } %>
+
+         <% if (cv.certifications && cv.certifications.length > 0) { %>
+        <div class="certifications">
+          <h3>Certifications</h3>
+          <ul>
+            <% cv.certifications.forEach(certif => { %>
+              <li><%= certif.level %></li>
+            <% }); %>
+          </ul>
+        </div>
+        <% } %>
+
+      </div>
+    </section>
+  </main>
+  <script src="/js/transition.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tous les CVs | Gestionnaire de CVs</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Gestionnaire de CVs</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/search">Recherche</a></li>
+          <li><a href="/results" class="active">Tous les CVs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="results-section">
+      <h2>Tous les CVs</h2>
+      
+      <div class="filters">
+        <div class="filter">
+          <label for="sort-by">Trier par:</label>
+          <select id="sort-by">
+            <option value="name-asc">Nom (A-Z)</option>
+            <option value="name-desc">Nom (Z-A)</option>
+          </select>
+        </div>
+        
+        <div class="filter">
+          <label for="filter-tech">Filtrer par technologie:</label>
+          <select id="filter-tech">
+            <option value="">Toutes les technologies</option>
+          </select>
+        </div>
+      </div>
+      
+      <div id="cv-list" class="cv-grid">
+        <div class="loading">Chargement des CVs...</div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script>
+    let allCVs = [];
+    
+    async function loadCVs() {
+      try {
+        const response = await fetch('/api/cvs');
+        const result = await response.json();
+        
+        if (result.success) {
+          allCVs = result.data;
+          populateTechnologiesFilter();
+          displayCVs(allCVs);
+        } else {
+          showError('Impossible de charger les CVs');
+        }
+      } catch (error) {
+        console.error('Erreur lors du chargement des CVs:', error);
+        showError('Une erreur est survenue lors du chargement des CVs');
+      }
+    }
+    
+    function populateTechnologiesFilter() {
+      const techFilter = document.getElementById('filter-tech');
+      const technologies = new Set();
+      
+      allCVs.forEach(cv => {
+        cv.technologies.forEach(tech => technologies.add(tech));
+      });
+      
+      Array.from(technologies).sort().forEach(tech => {
+        const option = document.createElement('option');
+        option.value = tech;
+        option.textContent = tech;
+        techFilter.appendChild(option);
+      });
+    }
+    
+    function displayCVs(cvs) {
+      const cvList = document.getElementById('cv-list');
+      cvList.innerHTML = '';
+      
+      if (cvs.length === 0) {
+        cvList.innerHTML = '<p class="no-results">Aucun CV trouvé</p>';
+        return;
+      }
+      
+      cvs.forEach(cv => {
+        const cvCard = document.createElement('div');
+        cvCard.className = 'cv-card';
+        cvCard.innerHTML = `
+          <h3>${cv.nom}</h3>
+          <p class="cv-email">${cv.email}</p>
+          <div class="technologies">
+            ${cv.technologies.slice(0, 3).map(tech => `<span class="tag">${tech}</span>`).join('')}
+            ${cv.technologies.length > 3 ? '<span class="tag">+' + (cv.technologies.length - 3) + '</span>' : ''}
+          </div>
+          <div class="cv-actions">
+            <a href="/cv/${cv.id}" class="btn btn-outline">Voir détails</a>
+            <a href="/api/cvs/${cv.id}/pdf" class="btn btn-secondary" target="_blank">Télécharger PDF</a>
+          </div>
+        `;
+        cvList.appendChild(cvCard);
+      });
+    }
+    
+    function showError(message) {
+      const cvList = document.getElementById('cv-list');
+      cvList.innerHTML = `<p class="error">${message}</p>`;
+    }
+    
+    document.getElementById('sort-by').addEventListener('change', (e) => {
+      const sortValue = e.target.value;
+      let sortedCVs = [...allCVs];
+      
+      if (sortValue === 'name-asc') {
+        sortedCVs.sort((a, b) => a.nom.localeCompare(b.nom));
+      } else if (sortValue === 'name-desc') {
+        sortedCVs.sort((a, b) => b.nom.localeCompare(a.nom));
+      }
+      
+      const currentFilter = document.getElementById('filter-tech').value;
+      if (currentFilter) {
+        sortedCVs = sortedCVs.filter(cv => cv.technologies.includes(currentFilter));
+      }
+      
+      displayCVs(sortedCVs);
+    });
+    
+    document.getElementById('filter-tech').addEventListener('change', (e) => {
+      const filterValue = e.target.value;
+      let filteredCVs = [...allCVs];
+      
+      if (filterValue) {
+        filteredCVs = filteredCVs.filter(cv => cv.technologies.includes(filterValue));
+      }
+      
+      const currentSort = document.getElementById('sort-by').value;
+      if (currentSort === 'name-asc') {
+        filteredCVs.sort((a, b) => a.nom.localeCompare(b.nom));
+      } else if (currentSort === 'name-desc') {
+        filteredCVs.sort((a, b) => b.nom.localeCompare(a.nom));
+      }
+      
+      displayCVs(filteredCVs);
+    });
+    
+    window.addEventListener('DOMContentLoaded', loadCVs);
+  </script>
+</body>
+</html>

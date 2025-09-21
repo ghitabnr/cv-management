@@ -1,0 +1,810 @@
+[
+  {
+    "id": 1,
+    "name": "Ghita",
+    "lastname": "Bounouara",
+    "photo": "/images/ghita.jpg",
+    "title": "Étudiante en Master Qualité du Logiciel",
+    "email": "ghita.bnr2003@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ghita-bounouaraa02b06253",
+    "github": "https://github.com/ghitabnr",
+    "phone": "(+212) 663 156 904",
+    "address": "Fès, Maroc",
+    "summary": "Ingénieure en informatique avec une bonne expérience sur les architectures logicielles et les nouvelles technologies informatique, en l'occurence Jakarta EE, Spring Boot, React et Angular. Expérimentée dans la gestion de projets agiles, planification, exécution et coordination des tâches avec des équipes multifonctionnelles. Disposante des compétences requises en communication et en résolution de problèmes avec un esprit ouvert en collaboration efficace avec les parties prenantes et les membres de l'équipe.",
+    "experiences": [
+      {
+        "title": "Data Scientist",
+        "company": "Dr Stone - Casablanca",
+        "startDate": "2024-03",
+        "endDate": "2024-05",
+        "description": "Développement d'un système de détection en temps réel des oranges pourries basé sur du deep learning et l'utilisation de drones [PyTorch, YOLOv5, Roboflow]."
+      },
+      {
+        "title": "Développeure Web",
+        "company": "Webhelp - Fès",
+        "startDate": "2022-10",
+        "endDate": "2022-11",
+        "description": "Conception et développement d'une application web de gestion des hôtels [HTML, CSS, JavaScript]."
+      },
+      {
+        "title": "Analyse statique et génération de diagrammes UML (Java)",
+        "company": "Projet Académique",
+        "startDate": "2024-12",
+        "endDate": "2025-01",
+        "description": "Développement d'une application Java permettant l'extraction automatique des packages, classes, interfaces et annotations à partir d'un projet Java en utilisant l'introspection [Java, UML, XML, Swing] : Construction de diagrammes de packages et de classes UML, Extraction des relations (agrégation, extension, utilisation, etc.) entre entités, Persistance des données en XML personnalisé et export XMI (standard OMG), Étude de XMI, MOF et EMF + benchmark de plugins Eclipse UML, Création d'une interface Swing pour la visualisation graphique des diagrammes."
+      },
+      {
+        "title": "Gestion des Étudiants - Application CRUD en Java",
+        "company": "Projet Académique",
+        "startDate": "2025-04",
+        "endDate": "2025-05",
+        "description": "Développement d'une application Maven pour gérer des étudiants avec une architecture en couches [Java, Maven, XML, JUnit] : Création d'un projet Maven structuré avec une gestion de dépendances, Implémentation de la couche DAO pour manipuler les données étudiantes, Développement de la couche Business pour gérer les services métier, Tests unitaires des services métier avec une implémentation simulée de la DAO, Gestion de version et hébergement du projet sur GitLab."
+      },
+      {
+        "title": "Déploiement d'une application JEE dans Docker sur AWS",
+        "company": "Projet Académique",
+        "startDate": "2025-04",
+        "endDate": "2025-05",
+        "description": "Développement d'une application Java permettant l'extraction automatique des packages, classes, interfaces et annotations à partir d'un projet Java en utilisant l'introspection [Java, UML, XML, Swing] : Construction de diagrammes de packages et de classes UML, Extraction des relations (agrégation, extension, utilisation, etc.) entre entités, Persistance des données en XML personnalisé et export XMI (standard OMG), Étude de XMI, MOF et EMF + benchmark de plugins Eclipse UML, Création d'une interface Swing pour la visualisation graphique des diagrammes Déploiement d'une application full-stack (frontend + backend) sur AWS avec ECS Fargate et AWS Copilot [AWS, Docker, JEE, AWS Copilot]: Préparation de l'environnement cloud sécurisé sur AWS, Installation et configuration de Docker, AWS Copilot CLI, Utilisation de AWS Copilot pour automatiser le déploiement de services, Déploiement d'une architecture full-stack sur ECS Fargate, Mise en place d'un système de Service Discovery pour la communication entre services"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master en Qualité du Logiciel",
+        "institution": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+        "startYear": "2024",
+        "endYear": "2026",
+        "description": ""
+      },
+      {
+        "degree": "Licence en Sciences Mathématiques et Informatique",
+        "institution": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+        "startYear": "2024",
+        "endYear": "2020",
+        "description": ""
+      },
+      {
+        "degree": "Baccalauréat en Sciences Mathématiques B",
+        "institution": "Lycée Technique de Fès",
+        "startYear": "2019",
+        "endYear": "2020",
+        "description": ""
+      }
+    ],
+    "skills": [
+      "Systèmes d'Exploitation : Linux / Windows", 
+      "Langages de Programmation : Java / Python / C / PHP",
+      "Ingénierie du Web : HTML / CSS / JavaScript / Node.js / Angular / React", 
+      "Jakarta Entreprise Edition (JEE) : Architecture 3 tiers / Modèle MVC2 / Servlets et JSP / Modèle DAO / Framework Spring, Spring Boot / JPA / Hibernate / Administration Tomcat", 
+      "Bases de Données : MySQL / SQL Server", 
+      "Cloud Computing : AWS (EC2, S3, RDS, ...) / Docker / Apache CloudStack", 
+      "Outils de Développement : Eclipse / Visual Studio / STS", 
+      "Ingénierie DevOps : Maven / Git / GitHub / GitLab / Jira / Jenkins / JUnit / Selenuim / JaCoCo / Trello", 
+      "Conception & Architecture Logicielle : UML / Merise",
+      "Technologie XML : Standard XML / Bases de données XML / Parseurs XML (DOM, SAX) / DTD / XSD (XML Schema) / XSLT / XPath / XQuery", 
+      "Méthodologies Agiles : Agile  / Scrum", 
+      "Data Science / IA : Deep Learning"
+    ],
+    "languages": [
+      {
+        "name": "Français",
+        "level": "Courant"
+      },
+      {
+        "name": "Anglais",
+        "level": "Courant"
+      },
+      {
+        "name": "Arab",
+        "level": "Maternelle"
+      }
+    ],
+    "softSkills": [
+      {
+        "level": "Esprit d'équipe"
+      },
+      {
+        "level": "Communication"
+      },
+      {
+        "level": "Capacité de Résolution de problèmes"
+      }
+    ],
+    "certifications": [
+      {
+        "level": "Certificat de participation INNOVATION CAMP-INJAZ (2025)"
+      },
+      {
+        "level": "Software Engineer – ALX Academy (Mai 2023 - Août 2024)"
+      },
+      {
+        "level": "Microsoft Office Specialist: Master – Microsoft (Février 2022 - Juillet 2022)"
+      },
+      {
+        "level": "Advanced English as a Second Language – Saylor Academy (2021)"
+      }
+    ]
+  },
+  {
+  "id": 2,
+  "name": "Chaymae",
+  "lastname": "EL BOUSSADANY",
+  "photo": "/images/chaymae.jpg",
+  "title": "Étudiante en Master Qualité du Logiciel",
+  "email": "elboussadanychaymae@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/chaymae-el-boussadany-3223ba269",
+  "github": "https://github.com/ShyM4e",
+  "phone": "(+212) 679 383 336",
+  "address": "Al Andalous N°317, Ain Chkef Fès",
+  "summary": "Étudiante en 1ère année Master Qualité de Logiciel avec des compétences en génie logiciel, méthodes agiles et traitement de données.",
+  "experiences": [
+    {
+      "title": "Réalisation d'une application de Gestion de CVs",
+      "company": "Projet Académique",
+      "startDate": "2025-04",
+      "endDate": "2025-05",
+      "description": "Développement d'une application web de gestion de CVs [HTML, CSS, JavaScript]"
+    },
+    {
+      "title": "Générateur de diagrammes de classe",
+      "company": "Projet Académique",
+      "startDate": "2024-12",
+      "endDate": "2025-01",
+      "description": "Développement d'un générateur de diagrammes de classe [Java]"
+    },
+    {
+      "title": "Analyse sentimentale des tweets",
+      "company": "Projet Académique",
+      "startDate": "2024-04",
+      "endDate": "2024-05",
+      "description": "Analyse de sentiments à partir de tweets [Python, Selenium, MongoDB, Power BI]"
+    },
+    {
+      "title": "Cloud Migration Project – Solution Cloud pour e-commerce",
+      "company": "Projet Académique",
+      "startDate": "2024-06",
+      "endDate": "2024-08",
+      "description": "Migration vers le cloud pour une solution e-commerce [Hyper-V, NextCloud, Postfix]"
+    },
+    {
+      "title": "Application Mobile \"In Morocco\"",
+      "company": "Projet Académique",
+      "startDate": "2023-03",
+      "endDate": "2023-05",
+      "description": "Développement d'une application mobile touristique [Flutter, SQFLite, Firebase]"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master MQL",
+      "institution": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+      "startYear": "2024",
+      "endYear": "2026",
+      "description": ""
+    },
+    {
+      "degree": "Master Big Data Analytics And Smart Systems (non poursuivi)",
+      "institution": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+      "startYear": "2023",
+      "endYear": "2024",
+      "description": ""
+    },
+    {
+      "degree": "Licence Fondamentale : Science Mathématiques et Informatique",
+      "institution": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+      "startYear": "2020",
+      "endYear": "2023",
+      "description": ""
+    },
+    {
+      "degree": "Baccalauréat Sciences Mathématiques B, option Français",
+      "institution": "Lycée Technique de Fes",
+      "startYear": "2019",
+      "endYear": "2020",
+      "description": ""
+    }
+  ],
+  "skills": [
+    "Jakarta Entreprise Edition (JEE): Architecture 3 tiers, Modèle MVC2, Servlets et JSP, modèle DAO, Administration Tomcat",
+    "Ingénierie du Web: HTML, CSS, JavaScript, Node.js",
+    "Ingénierie DevOps: Maven, Git, GitHub, GitLab, Jira, JUnit, Selenium, Docker, Kubernetes",
+    "Technologie XML: Standard XML, Bases de données XML, Parseurs XML (DOM, SAX), DTD, XSD (XML Schema), XSLT, XPath, XQuery",
+    "Développement Mobile: Flutter",
+    "Gestion Base de Données: MySQL, MongoDB, Neo4j, Firebase",
+    "Intelligence Artificielle & Traitement des Données: Python, Pandas, NumPy, Nettoyage et préparation des données, Matplotlib, Seaborn, Scikit-Learn, TensorFlow/Keras",
+    "Méthodes Agiles: Scrum"
+  ],
+  "languages": [
+    {
+      "name": "Français",
+      "level": "B2"
+    },
+    {
+      "name": "Anglais",
+      "level": "C1"
+    },
+    {
+      "name": "Allemand",
+      "level": "A1"
+    },
+    {
+      "name": "Espagnol",
+      "level": "A1"
+    }
+  ],
+  "softSkills": [
+    {
+      "level": "Communication"
+    },
+    {
+      "level": "Esprit d'équipe"
+    },
+    {
+      "level": "Intelligence Emotionnelle"
+    },
+    {
+      "level": "Ecoute Active"
+    },
+    {
+      "level": "Créativité"
+    },
+    {
+      "level": "Capacité de Résolution de problèmes"
+    },
+    {
+      "level": "Flexibilité et Dynamisme"
+    },
+    {
+      "level": "Présence"
+    }
+  ],
+  "certifications": []
+},
+  {
+    "id": 3,
+    "name": "Hanane",
+    "lastname": "MALKI",
+    "photo": "/images/hanane.jpg",
+    "title": "Étudiante en Master Qualité du Logiciel",
+    "email": "hanane.malki003@gmail.com",
+    "linkedin": "linkedin.com/in/hanane-malki-1445312a7",
+    "github": "github.com/hananemalki",
+    "phone": "(+212) 690 022 136",
+    "address": "Meknes, Maroc",
+    "summary": "Étudiante en première année de Master Qualité Logiciel, avec des compétences solides en génie logiciel, qualité logicielle et développement d'applications. Expérience dans le développement d'API REST, applications web et mobiles avec diverses technologies comme Laravel, React, Spring Boot et Kotlin.",
+    "experiences": [
+      {
+        "title": "Réalisation d'une API Rest pour Gestion de stock",
+        "company": "MedyouIn",
+        "startDate": "2024-04",
+        "endDate": "2024-05",
+        "description": "Développement d'une API REST pour la gestion des stocks au sein de MedyouIn [Laravel, REST API, PHP, MySQL, PostMan]"
+      },
+      {
+        "title": "Réalisation d'une application web de gestion et de répartition des compteurs",
+        "company": "La RADEM",
+        "startDate": "2023-04",
+        "endDate": "2023-05",
+        "description": "Développement d'une application web dédiée à la gestion et à la répartition des compteurs pour la RADEM [Laravel, React, Node.js, AJAX, MySQL]"
+        
+      },
+      {
+        "title": "Réalisation d'une application web de gestion des heurs supplémentaires",
+        "company": "La RADEM",
+        "startDate": "2022-06",
+        "endDate": "2022-07",
+        "description": "Développement d'une application web dédiée à la gestion des heures supplémentaires des employés de la RADEM [HTML5, CSS3, PHP, JavaScript, MySQL]"
+        
+      },
+      {
+        "title": "Générateur de diagrammes UML",
+        "company": "FSDM",
+        "startDate": "2024-12",
+        "endDate": "2025-01",
+        "description": "Développement d'une application Desktop pour l'éxtraction et la génération de diagrammes UML [Java, Swing]"
+      
+      },
+      {
+        "title": "Application web e-contact",
+        "company": "Ecole supérieur de technologies, Meknès",
+        "startDate": "2024-03",
+        "endDate": "2024-03",
+        "description": "Développement d'une application web dédiée à la gestion et à l'organisation des contacts [JEE, REST API, HTML5, CSS3, JavaScript]"
+       
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master en Qualité du Logiciel (MQL)",
+        "institution": "Faculté des sciences dhar el mehraz - Université Sidi Mohamed Ben Abdellah",
+        "startYear": "2024",
+        "endYear": "2026",
+        "description": ""
+      },
+      {
+        "degree": "Licence professionnelles en Développement des systèmes d'Informations et de communications (DSIC)",
+        "institution": "Ecole supérieure de Technologie Meknes - Université Moulay Ismail",
+        "startYear": "2023",
+        "endYear": "2024",
+        "description": ""
+      },
+      {
+        "degree": "Diplôme universitaire de technologie en Génie informatique, Option : Génie logiciel",
+        "institution": "Ecole supérieure de Technologie Meknes - Université Moulay Ismail",
+        "startYear": "2021",
+        "endYear": "2023",
+        "description": ""
+      },
+      {
+        "degree": "Baccalauréat en Science physiques et chimique option francais",
+        "institution": "Lycée Abderahman Ben Zidane - Meknès",
+        "startYear": "2020",
+        "endYear": "2021",
+        "description": ""
+      }
+    ],
+    "skills": [
+      "Jakarta Entreprise Edition (JEE): Architecture 3 tiers, Modèle MVC2, Servlets et JSP, Modèle DAO, Framework Spring/Spring Boot, JPA, Hibernate, Administration Tomcat",
+      "Ingénierie du Web: HTML5, CSS3, JavaScript, Node.js, React, PHP",
+      "Ingénierie DevOps: Maven, Git, GitHub, GitLab, Jira, Jenkins, JUnit, Selenium",
+      "Technologie XML: Standard XML, Bases de données XML, Parseurs XML (DOM, SAX), DTD, XSD (XML Schema), XSLT, XPath, XQuery",
+      "Langages de Programmation: Java, C++, Kotlin",
+      "Bases de Données: MySQL, Oracle, MongoDB",
+      "Technologie mobile: Kotlin, Java"
+    ],
+    "languages": [
+      {
+        "name": "Français",
+        "level": "B2"
+      },
+      {
+        "name": "Anglais",
+        "level": "B2"
+      },
+      {
+        "name": "Arabe",
+        "level": "Maternelle"
+      }
+    ],
+    "softSkills": [
+      {
+        "level": "Communication"
+      },
+      {
+        "level": "Esprit d'équipe"
+      },
+      {
+        "level": "Capacité de Résolution de problèmes"
+      },
+      {
+        "level": "Intelligence Emotionnelle"
+      },
+      {
+        "level": "Gestion du Temps et Stress"
+      }
+    ],
+    "certifications": [
+      {
+        "level": "Participation au Company Programme Injaz Almaghreb"
+      },
+      {
+        "level": "Internet Society: Introduction à l'exploitation des réseaux"
+      },
+      {
+        "level": "Membre du comité d'organisation du 2ᵉ édition de la conférence internationale UMIESP"
+      }
+    ]
+},
+{
+    "id": 4,
+    "name": "Kaoutar",
+    "lastname": "Belmajdoub",
+    "photo": "/images/kaoutar.jpg",
+    "title": "Étudiante en Master Qualité du Logiciel",
+    "email": "kaoutarbelmajdoub@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/kaoutar-belmajdoub-91b313295/",
+    "github": "https://github.com/KaoutarBelmajdoub",
+    "phone": "(+212) 623 341 516",
+    "address": "Fès, Maroc",
+    "summary": "Étudiante en Master Qualité du Logiciel, passionnée par les technologies modernes, le développement orienté qualité et les projets bien structurés. Sérieuse, rigoureuse et motivée pour travailler en équipe.",
+    "experiences": [
+      {
+        "title": "Stagiaire en Développement",
+        "company": "DM Technology",
+        "startDate": "2023-03",
+        "endDate": "2023-07",
+        "description": "Stage en développement logiciel"
+      },
+      {
+        "title": "Chef d'équipe",
+        "company": "AIESEC",
+        "startDate": "2020-08",
+        "endDate": "2020-12",
+        "description": "Gestion d'équipe et coordination de projets"
+      },
+      {
+        "title": "Classification des images de grêle par l'IA",
+        "company": "FSDM",
+        "startDate": "2023-03",
+        "endDate": "2023-05",
+        "description": "Développement d'un système de classification d'images utilisant l'IA [Python, VGG16, DenseNet121, TensorFlow, Keras]"
+      },
+      {
+        "title": "Générateur de diagrammes de classe",
+        "company": "FSDM",
+        "startDate": "2024-12",
+        "endDate": "2025-01",
+        "description": "Développement d'un générateur de diagrammes UML [Java]"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master Qualité du Logiciel (MQL)",
+        "institution": "Faculté des Sciences Dhar El Mahraz",
+        "startYear": "2024",
+        "endYear": "2026"
+      },
+      {
+        "degree": "Licence fondamentale Mathématiques et Informatique",
+        "institution": "Faculté des Sciences Dhar El Mahraz",
+        "startYear": "2020",
+        "endYear": "2023"
+      },
+      {
+        "degree": "Baccalauréat Sciences Mathématiques (Option B)",
+        "institution": "Lycée Ibn Rochd Fès",
+        "startYear": "2016",
+        "endYear": "2020"
+      }
+    ],
+    "skills": [
+      "Langages: Java, C, PHP, Python",
+      "Web: JavaScript, HTML, CSS, Node.js",
+      "IA/ML: Keras, TensorFlow",
+      "Méthodologies: Scrum",
+      "DevOps: Maven, Git, GitHub, GitLab, JUnit",
+      "Bases de données: Oracle, MySQL",
+      "Plateformes: ServiceNow, Kaggle",
+      "Modélisation: UML",
+      "Cloud: AWS, Apache CloudStack, Hyper-V",
+      "JEE: MVC2, Servlets, JSP, DAO, Spring Boot, JPA, Hibernate",
+      "XML: DOM, SAX, DTD, XSD, XSLT, XPath, XQuery"
+    ],
+    "languages": [
+      {
+        "name": "Français",
+        "level": "B2"
+      },
+      {
+        "name": "Anglais",
+        "level": "B2"
+      },
+      {
+        "name": "Arabe",
+        "level": "Maternelle"
+      }
+    ],
+    "softSkills": [
+      {
+        "level": "Communication"
+      },
+      {
+        "level": "Esprit d'équipe"
+      },
+      {
+        "level": "Intelligence Emotionnelle"
+      },
+      {
+        "level": "Empathie et Ecoute"
+      },
+      {
+        "level": "Créativité"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Wijdane",
+    "lastname": "Razzouk",
+    "photo": "/images/wijdane.jpg",
+    "title": "Étudiante en Master Qualité du Logiciel",
+    "email": "wijdane.razzouk@gmail.com",
+    "linkedin": "www.linkedin.com/in/wijdane-razzouk-278049173",
+    "phone": "(+212) 612 707 094",
+    "address": "Fès, Maroc",
+    "summary": "Ingénieur en informatique avec une bonne expérience sur les architectures logicielles et les nouvelles technologies informatique, en l'occurence Jakarta EE, Spring Boot, React et Angular. Expérimenté dans la gestion de projets agiles, planification, exécution et coordination des tâches avec des équipes multifonctionnelles.",
+    "experiences": [
+      {
+        "title": "Réalisation d'une application de Gestion de ticket",
+        "company": "OCTOBOT CONSULTING & TRAINING",
+        "startDate": "2023-03",
+        "endDate": "2023-05",
+        "description": "Développement d'une application de gestion de tickets  [Github, React, Laravel]"
+      },
+      {
+        "title": "Réalisation d'une application de Gestion des données des élèves",
+        "company": "Ecole Privee AlKarama Bousaid",
+        "startDate": "2023-07",
+        "endDate": "2023-09",
+        "description": "Développement d'un système de gestion des données scolaires [Mysql, React, Laravel]"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master MQL",
+        "institution": "FSDM - Université Sidi Mohammed ben Abdellah",
+        "startYear": "2024",
+        "endYear": "2026"
+      },
+      {
+        "degree": "Licence Professionnelle en Logiciels et Développement Web",
+        "institution": "ENS - Ecole Normale Superieur - Tetouan",
+        "startYear": "2023",
+        "endYear": "2024"
+      },
+      {
+        "degree": "DTS Développement Digital Option Web Full Stack",
+        "institution": "IFMOTICA - Fès",
+        "startYear": "2022",
+        "endYear": "2023"
+      },
+      {
+        "degree": "Baccalauréat Science Physique",
+        "institution": "Lycée Abdelah Guenoun - Fès",
+        "startYear": "2018",
+        "endYear": "2019"
+      }
+    ],
+    "skills": [
+      "Jakarta EE: Architecture 3 tiers, MVC2, Servlets, JSP, DAO, Spring Boot, JPA, Hibernate, Tomcat",
+      "Web: HTML, CSS, JavaScript, Node.js, React, Angular",
+      "DevOps: Maven, Git, GitHub, GitLab, Jira, Jenkins, JUnit, Selenium",
+      "XML: Standard XML, Bases de données XML, Parseurs XML (DOM, SAX), DTD, XSD, XSLT, XPath, XQuery",
+      "Business Intelligence: ETL, Talend, Pentaho, Olap, PowerBI"
+    ],
+    "languages": [
+      {
+        "name": "Arabe",
+        "level": "Maternelle"
+      },
+      {
+        "name": "Français",
+        "level": "B2"
+      },
+      {
+        "name": "Anglais",
+        "level": "B2"
+      }
+    ],
+    "softSkills": [
+      {
+        "level": "Communication"
+      },
+      {
+        "level": "Esprit d'équipe"
+      },
+      {
+        "level": "Empathie et Ecoute"
+      },
+      {
+        "level": "Créativité"
+      },
+      {
+        "level": "Adaptabilité"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Kenza",
+    "lastname": "Masrour",
+    "photo": "/images/kenza.jpg",
+    "title": "Étudiante en Master Qualité du Logiciel",
+    "email": "kenzamasrour96@gmail.com",
+    "phone": "(+212) 679 012 915",
+    "address": "Fès, Maroc",
+    "summary": "Étudiante en Master Spécialisé en Qualité du Logiciel avec des compétences en développement web, JEE et Business Intelligence. Expérience dans le développement d'applications web et l'analyse de données.",
+    "experiences": [
+      {
+        "title": "Agent Mailer",
+        "company": "E-DIRECT SARL AU",
+        "startDate": "2023-12",
+        "endDate": "2024-09",
+        "description": "Traitement et gestion des courriers électroniques"
+      },
+      {
+        "title": "Application web pour gestion des plans",
+        "company": "CHU de Fès",
+        "startDate": "2023-06",
+        "endDate": "2023-06",
+        "description": "Développement d'une application web de gestion des plans hospitaliers [JEE, Architecture 3-Tiers, Tomcat]"
+      
+      },
+      {
+        "title": "Reporting des données démographiques",
+        "company": "Commune de Fès",
+        "startDate": "2022-04",
+        "endDate": "2022-06",
+        "description": "Analyse et reporting des données démographiques  [ETL, Talend, Power BI, OLAP]"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master Spécialisé en Qualité du Logiciel",
+        "institution": "Université Sidi Mohamed Ben Abdellah",
+        "startYear": "2024",
+        "endYear": "2026"
+      },
+      {
+        "degree": "Licence Professionnelle en MIAGE",
+        "institution": "Université Hassan II, FSJES Mohammedia",
+        "startYear": "2022",
+        "endYear": "2023"
+      },
+      {
+        "degree": "DUT en Informatique Décisionnelle",
+        "institution": "EST Fès",
+        "startYear": "2020",
+        "endYear": "2022"
+      }
+    ],
+    "skills": [
+      "Technologie web: PHP, HTML, CSS, JavaScript, Node.js",
+      "JEE: MVC2, Servlets, JSP, DAO, JPA, Tomcat",
+      "Bases de données: MySQL, Oracle",
+      "XML: XML, DTD, XSD, XPath, XQuery",
+      "DevOps: Maven, Git, GitHub, GitLab, Jira, JUnit",
+      "Business Intelligence: ETL, Talend, Power BI, OLAP",
+      "Logiciels: Microsoft Office, Excel, Power BI, PPT, Access"
+    ],
+    "languages": [
+      {
+        "name": "Arabe",
+        "level": "Maternelle"
+      },
+      {
+        "name": "Français",
+        "level": "B2"
+      },
+      {
+        "name": "Anglais",
+        "level": "B2"
+      }
+    ],
+    "softSkills": [
+      {
+        "level": "Communication"
+      },
+      {
+        "level": "Esprit d'équipe"
+      },
+      {
+        "level": "Empathie"
+      },
+      {
+        "level": "Créativité"
+      },
+      {
+        "level": "Adaptabilité"
+      }
+    ]
+  },
+{
+  "id": 7,
+  "name": "Salma",
+  "lastname": "El Bakkouri",
+  "photo": "/images/salma.jpg",
+  "title": "Étudiante en Master Qualité du Logiciel",
+  "email": "salmaa.elbakkourii@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/salma-el-bakkouri/",
+  "github": "https://github.com/salma-elbakkouri",
+  "phone": "+212 6 13 17 90 25",
+  "address": "Fès, Maroc",
+  "summary": "Étudiante en 1ère année Master MQL, passionnée par l'ingénierie logicielle, le développement web et mobile, avec un intérêt marqué pour la conception visuelle. Sérieuse, motivée et toujours prête à apprendre.",
+  "experiences": [
+    {
+      "title": "Support IT & gestion des incidents techniques des clients",
+      "company": "ALTEN - Fès",
+      "startDate": "2024-03",
+      "endDate": "2024-06",
+      "description": "Stage PFA - Gestion des incidents techniques des clients avec les technologies [ServiceNow, TeamViewer, Microsoft Teams, Outlook & Office 365]"
+    },
+    {
+      "title": "Développeuse Web et Mobile",
+      "company": "Aymd Agency - Fès",
+      "startDate": "2024-07",
+      "endDate": "2024-09",
+      "description": "Stage PFE - Réalisation de sites web vitrines et une application mobile de santé avec [HTML, CSS, JavaScript, PHP, Node.js, MySQL, React Native, Expo, Figma, Canva, Git]"
+    },
+    {
+      "title": "Application mobile de localisation des pharmacies de garde",
+      "company": "Mercure Ingénierie - Fès",
+      "startDate": "2022-02",
+      "endDate": "2022-05",
+      "description": "Stage PFE - Réalisation d'une application mobile de localisation des pharmacies de garde à Fès avec [Java, XML, Firebase, Google Maps API]"
+    },
+    {
+      "title": "Scanner de projets Java et générateur de diagrammes UML",
+      "company": "Projet Académique - Master FSDM",
+      "startDate": "2024-12",
+      "endDate": "2025-01",
+      "description": "Développement d'une application avec interface Swing pour l'analyse de projets Java et génération de diagrammes UML [Java, Swing, DOM, XMI, Git]"
+    },
+    {
+      "title": "Application mobile d'exploration du patrimoine Rabat-Salé",
+      "company": "Projet Académique - Licence ESTS",
+      "startDate": "2024-01",
+      "endDate": "2024-04",
+      "description": "Développement d'une application mobile avec [React Native, Firebase, GraphHopper API, OpenStreetMap, Figma, Scrum, Maze, Git]"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master spécialisé en Qualité du Logiciel (en cours)",
+      "institution": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+      "startYear": "2024",
+      "endYear": "2026",
+      "description": ""
+    },
+    {
+      "degree": "Licence en Ingénierie des Applications Mobiles",
+      "institution": "ESTS - Université Mohammed V - Salé",
+      "startYear": "2020",
+      "endYear": "2023",
+      "description": ""
+    },
+    {
+      "degree": "DUT en Génie Informatique, option Génie Logiciel",
+      "institution": "ESTF - Université Sidi Mohammed ben Abdellah - Fès",
+      "startYear": "2018",
+      "endYear": "2020",
+      "description": ""
+    }
+  ],
+  "skills": [
+    "Java & JEE : Architecture 3-tiers, MVC2, Servlets & JSP, Administration Tomcat, Design patterns",
+    "Développement Web et Mobile : HTML, CSS, JavaScript, Node.js, Express, React, ReactNative, Android (Java)",
+    "DevOps : Maven, Trello, Git, Github, GitLab, JUnit, JaCoCo",
+    "Bases de Données : MySQL, SQL Server, Firebase, XML, JSON",
+    "APIs : REST/SOAP APIs, GraphQL",
+    "Outils : Figma, Canva, Postman, Wordpress, Word, PowerPoint, Teams",
+    "Conception : UML, Merise, Agile (Scrum), Prototypage, RWD, Tests d'utilisabilité"
+  ],
+  "languages": [
+    {
+      "name": "Arabe",
+      "level": "Maternelle"
+    },
+    {
+      "name": "Français",
+      "level": "B2"
+    },
+    {
+      "name": "Anglais",
+      "level": "C1"
+    }
+  ],
+  "softSkills": [
+    {
+      "level": "Organisation et planification"
+    },
+    {
+      "level": "Gestion du temps"
+    },
+    {
+      "level": "Créativité"
+    },
+    {
+      "level": "Adaptabilité"
+    }
+  ],
+  "certifications": [
+    {
+      "level": "TCF - Français B2"
+    },
+    {
+      "level": "EF SET - Anglais C1"
+    }
+  ]
+}
+]

@@ -1,0 +1,234 @@
+:root {
+  --bg-color: #f9f7f3;
+  --text-color: #333;
+  --primary: #5e503f;
+  --secondary: #a9927d;
+  --accent: #8a5a44;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.8;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.header-container div:nth-child(2) div:first-child {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.header-container div:nth-child(2) div:last-child {
+  font-size: 1.4rem;
+  color: var(--secondary);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin: 3rem 0 1.5rem;
+  position: relative;
+  text-align: justifyf;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.section-title::before,
+.section-title::after {
+  content: "•";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+
+.section-title::before {
+  left: -30px;
+}
+
+.section-title::after {
+  right: -30px;
+}
+
+.personal-info {
+  margin-bottom: 3rem;
+}
+
+.personal-info div:not(.section-title) {
+  margin-bottom: 0.5rem;
+}
+
+.personal-info span {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.education {
+  margin-bottom: 3rem;
+}
+
+.education > div:not(.section-title) {
+  margin-bottom: 1.5rem;
+}
+
+.education > div:not(.section-title) div:first-child {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.education > div:not(.section-title) div:last-child {
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.skills {
+  margin-bottom: 3rem;
+}
+
+.skills > div:not(.section-title) {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills > div:not(.section-title) div:first-child {
+  font-weight: bold;
+  color: var(--primary);
+  width: 40%;
+}
+
+.skills > div:not(.section-title) div:last-child {
+  width: 60%;
+}
+
+.experience > div:not(.section-title) {
+  margin-bottom: 1.5rem;
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--accent-color);
+  text-align: left;
+}
+
+.experience > div:last-child {
+  margin-bottom: 0;
+}
+
+.experience > div:not(.section-title) > div:first-child {
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.experience > div:not(.section-title) > div:nth-child(2) {
+  margin-bottom: 0.6rem;
+  color: var(--secondary);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.experience > div:not(.section-title) > div:nth-child(3) {
+  margin-bottom: 0.6rem;
+}
+
+.experience > div:not(.section-title) > div:nth-child(4) div {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.experience > div:not(.section-title) > div:nth-child(4) div:before {
+  content: '•';
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.soft-skills {
+  margin-bottom: 3rem;
+}
+
+.soft-skills > div:not(.section-title) {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.soft-skills > div:not(.section-title) div {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin: 0.5rem;
+}
+
+.languages {
+  margin-bottom: 3rem;
+}
+
+.languages > div:not(.section-title) {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.languages > div:not(.section-title) div {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.certifications {
+  margin-bottom: 3rem;
+}
+
+.certifications > div:not(.section-title) div {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.certifications > div:not(.section-title) div::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--secondary);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--secondary);
+  transition: border-color 0.3s;
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}

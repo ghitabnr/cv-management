@@ -1,0 +1,127 @@
+:root {
+  --bg-color: #fff5f5;
+  --text-color: #333;
+  --primary: #ff6b6b;
+  --secondary: #4ecdc4;
+  --accent: #ffe66d;
+}
+
+body {
+  font-family: 'Segoe UI';
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 10px 20psx rgba(0,0,0,0.1);
+}
+
+.professional-summary {
+  text-align: justify;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0 0.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: var(--primary);
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  background-color: var(--accent);
+  border-radius: 50px;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+li {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+   word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+a {
+  color: var(--secondary);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px dashed var(--secondary);
+  padding-bottom: 2px;
+  word-break: break-word;
+}
+
+.experience div {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-left: 5px solid var(--primary);
+}
+
+.experience h4 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience p {
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.skill-category {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-left: 5px solid var(--primary);
+}

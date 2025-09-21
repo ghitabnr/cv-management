@@ -1,0 +1,182 @@
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #333;
+  --primary: #2b2d42;
+  --secondary: #8d99ae;
+  --accent: #ef233c;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem;
+}
+
+.header-container > div:first-of-type {
+  margin-left: 1.5rem;
+}
+
+.header-container > div div:first-child {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 0.5rem;
+}
+
+.header-container > div div:last-child {
+  font-size: 1.3rem;
+  color: var(--secondary);
+  font-weight: 400;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 2rem 0 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--accent);
+}
+
+.personal-info, .education, .skills, .experience, .soft-skills, .languages, .certifications {
+  margin-bottom: 2.5rem;
+}
+
+.personal-info > div:not(.section-title),
+.education > div:not(.section-title),
+.skills > div:not(.section-title),
+.experience > div:not(.section-title),
+.soft-skills > div:not(.section-title),
+.languages > div:not(.section-title),
+.certifications > div:not(.section-title) {
+  margin-bottom: 0.8rem;
+}
+
+.personal-info span {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.education > div:not(.section-title) {
+  margin-bottom: 1.5rem;
+}
+
+.education > div > div:first-child {
+  font-weight: 600;
+}
+
+.skills > div:not(.section-title) {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.skills > div > div:first-child {
+  font-weight: 600;
+  width: 40%;
+}
+
+.skills > div > div:last-child {
+  width: 60%;
+}
+
+.experience > div:not(.section-title) {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.experience > div:not(.section-title):last-child {
+  border-bottom: none;
+}
+
+.experience > div > div:first-child {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.experience span {
+  font-weight: 600;
+}
+
+.experience > div > div:nth-child(4) > div {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.3rem;
+  border-bottom: none;
+}
+
+.experience > div > div:nth-child(4) > div::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.soft-skills > div:not(.section-title) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.soft-skills > div > div {
+  background: var(--primary);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.languages > div:not(.section-title) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.languages > div > div {
+  background: var(--secondary);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.certifications > div > div {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

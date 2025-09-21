@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionnaire de CV - MQL</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Gestionnaire de CV - MQL</h1>
+      <nav>
+        <ul>
+          <li><a href="/" class="active">Accueil</a></li>
+          <li><a href="/search">Recherche</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Bienvenue dans votre gestionnaire de CV - MQL</h2>
+      <p>Consultez, recherchez et générez des CVs en PDF.</p>
+    </section>
+
+    <section class="cv-list">
+      <h2>Liste des CVs</h2>
+      <div class="cards">
+        <% cvs.forEach(cv => { %>
+          <div class="card">
+            <h3><%= cv.name %> <%= cv.lastname %></h3>
+            <p class="title"><%= cv.title %></p>
+            <div class="skills">
+              <% cv.skills.slice(0, 3).forEach(skill => { %>
+                <span class="badge"><%= typeof skill === 'string' ? skill : skill.name %></span>
+              <% }); %>
+              <% if (cv.skills.length > 3) { %>
+                <span class="more">+<%= cv.skills.length - 3 %></span>
+              <% } %>
+            </div>
+            <div class="actions">
+              <a href="/cv/<%= cv.id %>" class="btn">Voir détails</a>
+              <a href="/api/cvs/<%= cv.id %>/pdf" class="btn btn-primary">Télécharger PDF</a>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="/js/transition.js"></script>
+</body>
+</html>

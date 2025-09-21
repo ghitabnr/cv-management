@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recherche de CV</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Gestionnaire de CV</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/search" class="active">Recherche</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <h2>Recherche de CV</h2>
+      
+      <div class="search-form">
+        <div class="search-options">
+          <button class="search-tab active" data-target="name-search">Recherche par nom</button>
+          <button class="search-tab" data-target="tech-search">Recherche par technologie</button>
+          <button class="search-tab" data-target="exp-search">Recherche par expérience</button>
+        </div>
+        
+        <div class="search-forms">
+          <div id="name-search" class="search-form-content active">
+            <h3>Recherche par nom</h3>
+            <div class="form-group">
+              <label for="name">Nom:</label>
+              <input type="text" id="name" placeholder="Entrez un nom...">
+            </div>
+            <button id="search-name-btn" class="btn btn-primary">Rechercher</button>
+          </div>
+          
+          <div id="tech-search" class="search-form-content">
+            <h3>Recherche par technologie</h3>
+            <div class="form-group">
+              <label for="technology">Technologie:</label>
+              <input type="text" id="technology" placeholder="Ex: JavaScript, React, SQL...">
+            </div>
+            <button id="search-tech-btn" class="btn btn-primary">Rechercher</button>
+          </div>
+          
+          <div id="exp-search" class="search-form-content">
+            <h3>Recherche par expérience</h3>
+            <div class="form-group">
+              <label for="years">Mois d'expérience minimales:</label>
+              <input type="number" id="years" min="0" value="1">
+            </div>
+            <button id="search-exp-btn" class="btn btn-primary">Rechercher</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="search-results">
+        <h3>Résultats de la recherche</h3>
+        <div id="results" class="cards">
+          <p class="no-results">Effectuez une recherche pour voir les résultats.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchTabs = document.querySelectorAll('.search-tab');
+      const searchForms = document.querySelectorAll('.search-form-content');
+      
+      searchTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          const target = this.dataset.target;
+          
+          searchTabs.forEach(t => t.classList.remove('active'));
+          searchForms.forEach(f => f.classList.remove('active'));
+          
+          this.classList.add('active');
+          document.getElementById(target).classList.add('active');
+        });
+      });
+      
+      function displayResults(results) {
+        const resultsContainer = document.getElementById('results');
+        
+        if (results.length === 0) {
+          resultsContainer.innerHTML = '<p class="no-results">Aucun résultat trouvé.</p>';
+          return;
+        }
+        
+        let html = '';
+        results.forEach(cv => {
+          let skillsHtml = '';
+          
+          if (cv.skills && cv.skills.length > 0) {
+            const skillsToShow = cv.skills.slice(0, 3);
+            skillsToShow.forEach(skill => {
+              skillsHtml += `<span class="badge">${typeof skill === 'string' ? skill : skill.name}</span>`;
+            });
+            
+            if (cv.skills.length > 3) {
+              skillsHtml += `<span class="more">+${cv.skills.length - 3}</span>`;
+            }
+          }
+          
+          html += `
+            <div class="card">
+              <h3>${cv.name} ${cv.lastname || ''}</h3>
+              <p class="title">${cv.title || ''}</p>
+              <div class="skills">${skillsHtml}</div>
+              <div class="actions">
+                <a href="/cv/${cv.id}" class="btn">Voir détails</a>
+                <a href="/api/cvs/${cv.id}/pdf" class="btn btn-primary">Télécharger PDF</a>
+              </div>
+            </div>
+          `;
+        });
+        
+        resultsContainer.innerHTML = html;
+      }
+      
+      document.getElementById('search-name-btn').addEventListener('click', function() {
+        const name = document.getElementById('name').value.trim();
+        
+        if (!name) {
+          alert('Veuillez entrer un nom.');
+          return;
+        }
+        
+        fetch(`/api/search/name/${encodeURIComponent(name)}`)
+          .then(response => response.json())
+          .then(data => displayResults(data))
+          .catch(error => {
+            console.error('Erreur lors de la recherche:', error);
+            alert('Une erreur est survenue lors de la recherche.');
+          });
+      });
+      
+      document.getElementById('search-tech-btn').addEventListener('click', function() {
+        const technology = document.getElementById('technology').value.trim();
+        
+        if (!technology) {
+          alert('Veuillez entrer une technologie.');
+          return;
+        }
+        
+        fetch(`/api/search/technology/${encodeURIComponent(technology)}`)
+          .then(response => response.json())
+          .then(data => displayResults(data))
+          .catch(error => {
+            console.error('Erreur lors de la recherche:', error);
+            alert('Une erreur est survenue lors de la recherche.');
+          });
+      });
+      
+      document.getElementById('search-exp-btn').addEventListener('click', function() {
+        const years = document.getElementById('years').value;
+        
+        fetch(`/api/search/experience/${years}`)
+          .then(response => response.json())
+          .then(data => displayResults(data))
+          .catch(error => {
+            console.error('Erreur lors de la recherche:', error);
+            alert('Une erreur est survenue lors de la recherche.');
+          });
+      });
+    });
+  </script>
+</body>
+</html>

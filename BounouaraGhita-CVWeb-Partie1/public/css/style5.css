@@ -1,0 +1,225 @@
+:root {
+  --bg-color: #fff5f5;
+  --text-color: #333;
+  --primary: #ff6b6b;
+  --secondary: #4ecdc4;
+  --accent: #ffe66d;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.header-container > div:first-of-type {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.header-container > div:last-of-type {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: var(--primary);
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  background-color: var(--accent);
+  border-radius: 50px;
+}
+
+.personal-info, .education, .skills, .experience, .soft-skills, .languages, .certifications {
+  margin-bottom: 2.5rem;
+}
+
+.personal-info > div:not(.section-title) {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.personal-info span {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+a {
+  color: var(--secondary);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px dashed var(--secondary);
+  padding-bottom: 2px;
+}
+
+a:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.education > div:not(.section-title) {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.education > div:not(.section-title):hover {
+  transform: translateY(-5px);
+}
+
+.education > div:not(.section-title) > div:first-child {
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.skills > div:not(.section-title) {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.skills > div:not(.section-title):hover {
+  transform: translateY(-3px);
+}
+
+.skills > div:not(.section-title) > div:first-child {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.experience > div:not(.section-title) {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-left: 5px solid var(--primary);
+}
+
+.experience > div:not(.section-title) > div:first-child {
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience > div:not(.section-title) > div:nth-child(2) {
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.experience > div:not(.section-title) > div:nth-child(3) {
+  margin-bottom: 1rem;
+}
+
+.experience > div:not(.section-title) > div:nth-child(4) > div {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 0.3rem;
+}
+
+.experience > div:not(.section-title) > div:nth-child(4) > div:before {
+  content: "•";
+  color: var(--secondary);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.experience span {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.soft-skills > div:not(.section-title),
+.languages > div:not(.section-title),
+.certifications > div:not(.section-title) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.soft-skills > div:not(.section-title) > div,
+.languages > div:not(.section-title) > div {
+  background-color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.certifications > div:not(.section-title) > div {
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  margin-bottom: 0.5rem;
+}
+
+.soft-skills > div:not(.section-title) > div:hover,
+.languages > div:not(.section-title) > div:hover,
+.certifications > div:not(.section-title) > div:hover {
+  transform: translateY(-3px);
+  background-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .skills > div:not(.section-title) {
+    grid-template-columns: 1fr;
+  }
+  
+  body {
+    padding: 1rem;
+  }
+}

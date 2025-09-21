@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV dynamique de Ghita Bounouara, Ingénieure Logiciel">
+  <meta name="author" content="Ghita Bounouara">
+  <title>CV Dynamique - Ghita Bounouara</title>
+  <link rel="stylesheet" id="theme-style" href="css/style1.css">
+  <link rel="stylesheet" href="css/editor.css">
+  <script src="js/app.js"></script>
+  <script src="js/data.js"></script>
+</head>
+<body>
+  <div id="cv-editor-panel" class="cv-editor-panel">
+    <div class="editor-header">
+      <h3>Éditeur de CV</h3>
+      <button id="editor-toggle" class="toggle-btn"> ◀ </button>
+    </div>
+    
+    <div class="editor-content">
+      <div class="editor-section">
+        <h4>Style du CV</h4>
+        <select id="cv-style-select">
+          <option value="css/style1.css">Style 1</option>
+          <option value="css/style2.css">Style 2</option>
+          <option value="css/style3.css">Style 3</option>
+          <option value="css/style4.css">Style 4</option>
+          <option value="css/style5.css">Style 5</option>
+        </select>
+      </div>
+      
+      <div class="editor-section">
+        <h4>Photo de profil</h4>
+        <div class="photo-controls">
+          <label class="upload-btn">
+            <input type="file" id="photo-upload" accept="image/*">
+          </label>
+          <button id="remove-photo">Supprimer</button>
+        </div>
+      </div>
+      
+      <div class="editor-section">
+        <h4>Gérer les sections</h4>
+        <div id="sections-container" class="sections-container">
+        </div>
+      </div>
+      
+      <div class="editor-section">
+        <h4>Ajouter une section</h4>
+        <input type="text" id="new-section-title" placeholder="Nom de la section">
+        <textarea id="new-section-content" placeholder="Contenu texte"></textarea>
+        <button id="add-section-btn">Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="external-toggle" class="editor-toggle-btn"> ▶ </button>
+  <button id="external-toggle" class="external-toggle-btn"> ▶ </button>
+
+  <div id="root"></div>
+
+  
+</body>
+</html>
